@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title%}<title>ZUGUS IOT-Connexion</title>{% endblock%}
+{% block content %}
+{% load static %}
+<div class="container">
+    <div class="row mt-5 mb-5 shadow">
+        <div class="col-lg-6 shadow p-4">
+            <h3>Créer un compte :</h3>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputText1">Nom :</label>
+                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputText1">Prénoms :</label>
+                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputText1">Adresse :</label>
+                    <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email :</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Mot de passe :</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <img src="{% static 'images/compte.jpg' %}"  class="img-fluid img-responsive d-block h-100" alt="SLIDE 0">
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
